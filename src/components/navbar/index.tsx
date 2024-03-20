@@ -25,7 +25,7 @@ const Navbar = () => {
             className={cn(
               "p-[5px] rounded-lg transition-all hover:underline",
               path === "/works" &&
-                "bg-indigo-300 dark:bg-indigo-800 hover:rounded-md"
+                "bg-emerald-300 dark:bg-emerald-800 hover:rounded-md"
             )}
           >
             Works
@@ -35,7 +35,7 @@ const Navbar = () => {
             className={cn(
               "p-[5px] rounded-lg transition-all hover:underline",
               path === "/posts" &&
-                "bg-indigo-300 dark:bg-indigo-800 hover:rounded-md"
+                "bg-emerald-300 dark:bg-emerald-800 hover:rounded-md"
             )}
           >
             Posts

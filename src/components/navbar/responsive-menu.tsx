@@ -26,7 +26,7 @@ const ResponsiveMenu = ({ path }: ResponsiveMenuProps) => {
         <DropdownMenuItem
           className={cn(
             path === "/works" &&
-              "bg-indigo-200 dark:bg-indigo-800 dark:focus:bg-indigo-800 focus:bg-indigo-200"
+              "bg-emerald-200 dark:bg-emerald-800 dark:focus:bg-emerald-800 focus:bg-emerald-200"
           )}
         >
           <Link href={"/works"} className="w-full">
@@ -36,7 +36,7 @@ const ResponsiveMenu = ({ path }: ResponsiveMenuProps) => {
         <DropdownMenuItem
           className={cn(
             path === "/posts" &&
-              "bg-indigo-200 dark:bg-indigo-800 dark:focus:bg-indigo-800 focus:bg-indigo-200"
+              "bg-emerald-200 dark:bg-emerald-800 dark:focus:bg-emerald-800 focus:bg-emerald-200"
           )}
         >
           <Link href={"/posts"} className="w-full">
