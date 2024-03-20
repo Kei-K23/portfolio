@@ -1,11 +1,51 @@
 import { pressStart2P } from "@/app/fonts";
 import { cn } from "@/lib/utils";
-import React from "react";
+import React, { useEffect } from "react";
+import { motion, useAnimate, useInView } from "framer-motion";
 
 const HeroText = () => {
+  const [scope, animate] = useAnimate();
+  const isInView = useInView(scope);
+
+  const h1Motion = {
+    initial: { opacity: 0, y: -100 },
+    animate: {
+      opacity: 1,
+      y: 0,
+    },
+    transition: { duration: 0.4 },
+  };
+
+  const h2Motion = {
+    initial: { opacity: 0, y: 100 },
+    animate: {
+      opacity: 1,
+      y: 0,
+    },
+    transition: { duration: 0.4 },
+  };
+
+  useEffect(() => {
+    (async () => {
+      if (isInView) {
+        await animate("h1", h1Motion.animate, h1Motion.transition);
+        await animate("h2", h2Motion.animate, h2Motion.transition);
+      } else {
+        await animate("h1", h1Motion.initial, { duration: 0.1 });
+        await animate("h2", h2Motion.initial, { duration: 0.1 });
+      }
+    })();
+  }, [isInView]);
+
   return (
-    <div className="space-y-4">
-      <h1
+    <div ref={scope} className="space-y-4">
+      <motion.h1
+        initial={{ opacity: 0, y: -100 }}
+        animate={{
+          opacity: 1,
+          y: 0,
+        }}
+        transition={{ duration: 0.4 }}
         className={cn(
           pressStart2P.className,
           "text-center text-2xl md:text-3xl"
@@ -16,8 +56,14 @@ const HeroText = () => {
           Arkar Min
         </span>{" "}
         (Kei)
-      </h1>
-      <h2
+      </motion.h1>
+      <motion.h2
+        initial={{ opacity: 0, y: 100 }}
+        animate={{
+          opacity: 1,
+          y: 0,
+        }}
+        transition={{ duration: 0.4 }}
         className={cn(
           "mx-auto leading-[55px] text-center max-w-[700px] text-lg md:text-xl"
         )}
@@ -26,8 +72,9 @@ const HeroText = () => {
         applications 🕸️ and tools ⚒️ to gain better DX. I always learn some new
         things and topics. In my free time, I write dummy libraries 📚 and clone
         other applications like Twitch, Trello, Discord (You can find those
-        close in my repo 🗂️).
-      </h2>
+        clones in my repo 🗂️). I want to write libraries that can be good and
+        boot DX 🚀.
+      </motion.h2>
     </div>
   );
 };
