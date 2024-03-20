@@ -42,14 +42,14 @@ const Intro = () => {
     transition: { duration: 0.4 },
   };
 
-  // const btnMotion = {
-  //   initial: { opacity: 0, y: 100 },
-  //   animate: {
-  //     opacity: 1,
-  //     y: 0,
-  //   },
-  //   transition: { duration: 0.5 },
-  // };
+  const btnMotion = {
+    initial: { opacity: 0, y: 100 },
+    animate: {
+      opacity: 1,
+      y: 0,
+    },
+    transition: { duration: 0.5 },
+  };
 
   useEffect(() => {
     (async () => {
@@ -57,12 +57,12 @@ const Intro = () => {
         await animate("h2", h2Motion.animate, h2Motion.transition);
         await animate("h3", h3Motion.animate, h3Motion.transition);
         await animate("p", pMotion.animate, pMotion.transition);
-        // await animate("#btn", btnMotion.animate, btnMotion.transition);
+        await animate("#btn", btnMotion.animate, btnMotion.transition);
       } else {
         await animate("h2", h2Motion.initial, { duration: 0.1 });
         await animate("h3", h3Motion.initial, { duration: 0.1 });
         await animate("p", pMotion.initial, { duration: 0.1 });
-        // await animate("#btn", btnMotion.initial, { duration: 0.1 });
+        await animate("#btn", btnMotion.initial, { duration: 0.1 });
       }
     })();
   }, [isInView]);

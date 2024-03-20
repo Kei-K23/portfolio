@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <header className=" z-10 backdrop-filter backdrop-blur-lg bg-opacity-40 border-b border-gray-200 dark:border-gray-800 sticky top-0 w-full">
-      <nav className="mx-auto flex items-center justify-between w-[500px] py-3 px-6">
+      <nav className="mx-auto w-full flex items-center justify-between py-3 px-6">
         <Link
           href={"/"}
           className=" flex items-center gap-2 bg-gradient-to-r from-emerald-500 via-teal-500 to-sky-500 bg-clip-text text-transparent text-lg font-semibold"
@@ -48,10 +48,8 @@ const Navbar = () => {
             Source
           </Link>
         </div>
-        <div className="flex items-center gap-4">
-          <ResponsiveMenu path={path} />
-          {/* <ModeToggle /> */}
-        </div>
+
+        <ResponsiveMenu path={path} />
       </nav>
     </header>
   );
