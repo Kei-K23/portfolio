@@ -137,7 +137,7 @@ export const CardImg = ({
   if (img === "") {
     return (
       <ImageIcon
-        className={cn(className, "w-full h-[150px] text-muted-foreground")}
+        className={cn(className, "w-full h-[200px] text-muted-foreground")}
       />
     );
   }
@@ -147,7 +147,7 @@ export const CardImg = ({
       height={150}
       src={"/works/" + img}
       alt={img}
-      className={cn(className, "w-full h-[150px]")}
+      className={cn(className, "w-full h-[200px]")}
     />
   );
 };

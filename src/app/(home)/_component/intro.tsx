@@ -71,7 +71,7 @@ const Intro = () => {
   return (
     <AnimatePresence>
       <div className="h-[40rem] w-full relative flex flex-col items-center justify-center antialiased">
-        <div ref={scope} className="max-w-3xl mx-auto p-4 w-full">
+        <div ref={scope} className="max-w-3xl mx-auto p-4 w-full mt-48">
           <IntroText />
         </div>
         <BackgroundBeams />

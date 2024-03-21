@@ -2,6 +2,7 @@ import { pressStart2P } from "@/app/fonts";
 import { cn } from "@/lib/utils";
 import React, { useEffect } from "react";
 import { motion, useAnimate, useInView } from "framer-motion";
+import Link from "next/link";
 
 const HeroText = () => {
   const [scope, animate] = useAnimate();
@@ -72,8 +73,16 @@ const HeroText = () => {
         applications 🕸️ and tools ⚒️ to gain better DX. I always learn some new
         things and topics. In my free time, I write dummy libraries 📚 and clone
         other applications like Twitch, Trello, Discord (You can find those
-        clones in my repo 🗂️). I want to write libraries that can be good and
-        boot DX 🚀.
+        clones in my{" "}
+        <Link
+          href={"https://github.com/Kei-K23"}
+          target="_blank"
+          className="text-emerald-500"
+        >
+          Github
+        </Link>{" "}
+        🗂️). My goal is to write softwares, toolings and libraries that are good
+        to use and boot DX 🚀.
       </motion.h2>
     </div>
   );
