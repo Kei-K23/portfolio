@@ -4,7 +4,6 @@ import Navbar from "@/components/navbar";
 import { siteConfig } from "@/config/site";
 import { ThemeProvider } from "@/components/theme-provider";
 import { play } from "./fonts";
-import { TracingBeam } from "@/components/aceternity/trace-beam";
 import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
@@ -29,11 +28,9 @@ export default function RootLayout({
           forcedTheme="dark"
           storageKey="my_portfolio_theme"
         >
-          <TracingBeam>
-            <Navbar />
-            {children}
-            <Footer />
-          </TracingBeam>
+          <Navbar />
+          {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
