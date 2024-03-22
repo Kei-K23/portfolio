@@ -12,7 +12,7 @@ const Experiences = () => {
         <h2
           className={cn(
             pressStart2P.className,
-            "mt-8 mb-8 bg-gradient-to-r from-emerald-500 via-teal-500 to-sky-500 bg-clip-text text-transparent text-center text-xl md:text-2xl"
+            " mb-8 bg-gradient-to-r from-emerald-500 via-teal-500 to-sky-500 bg-clip-text text-transparent text-center text-xl md:text-2xl"
           )}
         >
           Experiences

@@ -3,6 +3,7 @@ import { Hero } from "./_component/hero";
 import Intro from "./_component/intro";
 import Experiences from "./_component/experiences";
 import TechStack from "./_component/tech-stack";
+import Contact from "./_component/contact";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Intro />
       <Experiences />
       <TechStack />
+      <Contact />
     </main>
   );
 };
