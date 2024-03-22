@@ -8,7 +8,7 @@ import React from "react";
 const IntroText = () => {
   return (
     <>
-      <div className="flex items-start justify-between">
+      <div className="flex flex-col items-start md:flex-row md:items-start md:justify-between gap-y-4">
         <div>
           <h2 className={cn(pressStart2P.className, "text-xl md:text-2xl")}>
             Arkar Min
@@ -25,7 +25,7 @@ const IntroText = () => {
           />
         </div>
       </div>
-      <h3 className="text-2xl font-bold underline">Work</h3>
+      <h3 className="text-2xl font-bold underline mt-4">Work</h3>
       <p className="mt-4 text-lg">
         Arkar Min a passionate programmer, a self-teach learner and an
         undergraduate student, residing in Yangon (Myanmar), possesses a

@@ -6,7 +6,7 @@ import TechStack from "./_component/tech-stack";
 
 const Home = () => {
   return (
-    <main>
+    <main className="px-3">
       <Hero />
       <Intro />
       <Experiences />
