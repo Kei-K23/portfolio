@@ -1,5 +1,13 @@
 export const works = [
     {
+        name: "thunderSearch",
+        description: 'This is a simple full search implementation that search accurately and semantically with the power of PostgreSQL and Upstash Vector.',
+        img: 'thunderSearch.png',
+        languages: ['next', 'shadcn-ui', 'tailwind', 'typescript'],
+        htmlLink: "https://thunder-search.vercel.app",
+        githubLink: "https://github.com/Kei-K23/thunderSearch",
+    },
+    {
         name: "nuxt-crm",
         description: 'This is practical Nuxt CRM application',
         img: 'nuxtcrm.png',
