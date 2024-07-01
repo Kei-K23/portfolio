@@ -18,7 +18,7 @@ const Contact = () => {
         >
           Contact Me
         </h2>
-        <p className="mb-3">Send email me at: arkar1712luffy@gmail.com</p>
+        <p className="mb-3">Send email me at: arkar.dev.kei@gmail.com</p>
         <div className="grid grid-cols-4">
           {contact.map((c) => (
             <Link href={c.link} key={c.name} target="_blank">
