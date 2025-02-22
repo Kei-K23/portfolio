@@ -31,11 +31,13 @@ const HeroText = () => {
           "mx-auto leading-[55px] text-center max-w-[700px] text-lg md:text-xl"
         )}
       >
-        A passionate full-stack developer 🧑‍💻 that interest in writing web
-        applications 🕸️ and tools ⚒️ to gain better DX. I always learn some new
-        things and topics. In my free time, I write dummy libraries 📚 and clone
-        other applications like Twitch, Trello, Discord (You can find those
-        clones in my{" "}
+        A passionate full-stack developer interested about building full-stack
+        applications, exploring creative web development and strong practice of
+        building high performance, reusable UI components especially with React,
+        TypeScript and NextJS. Currently, I develop and deliver high quality web
+        applications, CMS applications, E-commerce websites and landing websites
+        for both clients and my own open-source products. Check out my latest
+        projects and open-source projects at (
         <Link
           href={"https://github.com/Kei-K23"}
           target="_blank"
@@ -43,8 +45,7 @@ const HeroText = () => {
         >
           Github
         </Link>{" "}
-        🗂️). My goal is to write softwares, toolings and libraries that are good
-        to use and boot DX 🚀.
+        🗂️)
       </h2>
     </div>
   );

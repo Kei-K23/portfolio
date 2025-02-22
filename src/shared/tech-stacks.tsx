@@ -11,10 +11,6 @@ export const techStacks = [
     icon: <Icon icon="skill-icons:typescript" className="text-[3.5rem]" />,
   },
   {
-    name: "Golang",
-    icon: <Icon icon="skill-icons:golang" className="text-[3.5rem]" />,
-  },
-  {
     name: "Php",
     icon: <Icon icon="skill-icons:php-dark" className="text-[3.5rem]" />,
   },
@@ -25,10 +21,6 @@ export const techStacks = [
   {
     name: "Next",
     icon: <Icon icon="skill-icons:nextjs-dark" className="text-[3.5rem]" />,
-  },
-  {
-    name: "Electron",
-    icon: <Icon icon="skill-icons:electron" className="text-[3.5rem]" />,
   },
   {
     name: "Node",
@@ -73,15 +65,7 @@ export const techStacks = [
     icon: <Icon icon="skill-icons:mongodb" className="text-[3.5rem]" />,
   },
   {
-    name: "Prisma",
-    icon: <Icon icon="skill-icons:prisma" className="text-[3.5rem]" />,
-  },
-  {
     name: "Docker",
     icon: <Icon icon="skill-icons:docker" className="text-[3.5rem]" />,
-  },
-  {
-    name: "Markdown",
-    icon: <Icon icon="skill-icons:markdown-dark" className="text-[3.5rem]" />,
   },
 ];

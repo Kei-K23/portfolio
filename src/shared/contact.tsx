@@ -14,7 +14,7 @@ export const contact = [
   },
   {
     name: "Linkedin",
-    link: "https://www.linkedin.com/in/arkar-min-b902882a0",
+    link: "https://www.linkedin.com/in/arkar-min-97410b308",
     icon: (
       <Icon
         icon="mdi:linkedin"
@@ -24,7 +24,7 @@ export const contact = [
   },
   {
     name: "X",
-    link: "https://twitter.com/Kei_Katherin",
+    link: "https://x.com/amin_dev_7?s=09",
     icon: (
       <Icon
         icon="mdi:twitter-circle"

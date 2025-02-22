@@ -18,7 +18,15 @@ const Contact = () => {
         >
           Contact Me
         </h2>
-        <p className="mb-3">Send email me at: arkar.dev.kei@gmail.com</p>
+        <p className="mb-3">
+          Send email to:{" "}
+          <a
+            href="mailto:arkar.dev.kei@gmail.com"
+            className="hover:text-emerald-500 hover:underline transition-all"
+          >
+            arkar.dev.kei@gmail.com
+          </a>
+        </p>
         <div className="grid grid-cols-4">
           {contact.map((c) => (
             <Link href={c.link} key={c.name} target="_blank">
