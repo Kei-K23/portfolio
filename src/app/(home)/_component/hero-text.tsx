@@ -32,12 +32,12 @@ const HeroText = () => {
         )}
       >
         A passionate full-stack developer interested about building full-stack
-        applications, exploring creative web development and strong practice of
-        building high performance, reusable UI components especially with React,
-        TypeScript and NextJS. Currently, I develop and deliver high quality web
-        applications, CMS applications, E-commerce websites and landing websites
-        for both clients and my own open-source products. Check out my latest
-        projects and open-source projects at (
+        applications, architecting high-performance and scalable systems and
+        system design concepts. Currently, I develop and deliver high quality
+        web applications, CMS applications, E-commerce websites and landing
+        websites for both clients and my own open-source products using
+        TypeScript, NodeJS, NestJS and React. Check out my latest projects and
+        open-source projects at (
         <Link
           href={"https://github.com/Kei-K23"}
           target="_blank"
